@@ -7,7 +7,7 @@ import {
   headContentAnimation,
   headTextAnimation,
   slideAnimation
-} from '../config/motion.js';
+} from '../config/config/motion.js';
 
 const Home = () => {
   const snap = useSnapshot(state);
@@ -18,7 +18,7 @@ const Home = () => {
         <motion.section className='home' {...slideAnimation('left')}>
           <motion.header>
             <img
-              src='./threejs.png' 
+              src='./public/threejs.png' 
               alt='logo'
               className='w-8 h-8 object-contain'
             />
